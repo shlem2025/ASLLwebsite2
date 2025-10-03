@@ -1,0 +1,95 @@
+	.header {
+	margin-left: -10px;
+	margin-right: -10px;
+	margin-top: -35px;
+	margin-bottom: 40px;
+	}
+	
+	
+	
+	h1 {
+	color: white;
+	padding-left: 15px;
+	padding-top: 40px;
+	font-size: 3.5em;
+	font: normal 300% 'century gothic', arial, sans-serif;   
+	}
+	
+	h5 {
+	color: white;
+	padding-right: 15px;
+	padding-left: 65px;
+	}
+	
+	h1, h5 {
+	line-height: 0.3em;
+	}
+		
+	.aside {
+	width: 350px;
+	height: 280px;
+	font-size: 2em;
+	color: white;
+	}
+	
+		
+	.menu-list {
+    list-style: none; /* Убираем маркеры списка */
+    flex-direction: column; /* Располагаем пункты меню вертикально */
+    margin-top: 40px;
+}
+
+	a {
+    font-size: 100%; 
+	text-decoration: none;
+}
+
+    li {
+    padding: 13px; /* Примерный размер фона */
+    margin-bottom: 5px;
+    color: white; /* Изначальный цвет текста */
+    transition: background-color 0.3s ease; /* Плавный переход цвета */
+  
+	}
+
+    /* Стиль для пункта списка при наведении курсора */
+    li:hover {
+    background-color: black; /* Черный фон при наведении */
+    cursor: pointer; /* Меняем курсор на "указатель", показывая интерактивность */
+    }
+	
+	.aside {
+	background: linear-gradient( rgba(255, 255, 255, 0.8), rgba(0, 0, 0, 0.5) ), url('/img/back/home-back.jpg');
+	background-repeat: no-repeat; /*Эти бэки дают прозрачно-серый прямоугольник*/
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: top;
+	}
+	
+	footer { 						/*Подвал*/
+	width: 100%;
+	height: 0px;
+	background:black;
+	margin-bottom: 0 0;
+	padding: 10px;
+	position: fixed; /*Два последних атрибута прижимают к нижнему  footer к краю экрана*/
+	bottom: 0; 
+	}	
+	
+	footer {
+	/* Пример: нижний отступ для контента */
+	padding-bottom: 30px; /* Если футер ниже контента */
+	margin-top: auto;
+	}
+
+	footer nav {
+	display: flex; /* Включает Flexbox для родителя */
+	justify-content: right; /* Cсылки по правому краю в линию */
+	gap: 15px; /* Добавляет пространство между ссылками */
+	}
+
+	footer a {
+	display: inline-block; /* Позволяет задавать отступы и выравнивание */
+	text-decoration: none; /* Убирает подчеркивание */
+	color: white; /* Цвет текста */
+	}
